@@ -24,36 +24,55 @@ body {
 }
 
 .logo img {
-  max-width: 350px; /* Ajuste o tamanho da logo conforme necessário */
+  max-width: 300px; /* Ajuste o tamanho da logo conforme necessário */
 }
 
 .login-form {
-  padding: 40px;
+  padding: 35px;
   width: 300px;
+
 }
 
 h1 {
   margin-bottom: 20px;
   text-align: center;
   font-weight: 700; /* Título mais grosso */
+  color:#ffffff;
 }
 
 .input-group {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 9px;
 }
 
+
+.material-icons{
+  border-radius: 100%; /* Faz o círculo */
+  background-color: #007bff;; /* Cor de fundo do círculo */
+  display: contents;
+  align-items: center;
+  justify-content: center;  
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5);
+  
+}
+
+.icon-circle i {
+  font-size: 80px; /* Tamanho do ícone */
+}
+
+
 input {
-  width: 100%;
+  width: 94%;
   padding: 10px;
   border: 1px solid #444;
   border-radius: 10px;
   background-color: #333;
   color: #fff;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5);
 }
 
 input:focus {
@@ -62,7 +81,7 @@ input:focus {
 }
 
 button {
-  width: 320px;
+  width: 304px;
   padding: 10px;
   background-color: #007bff;
   border: none;
@@ -71,6 +90,7 @@ button {
   font-size: 16px;
   font-weight: 200; /* Botão mais grosso */
   cursor: pointer;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5);
 }
 
 button:hover {
@@ -81,6 +101,7 @@ p {
   text-align: center;
   margin-top: 10px;
 }
+
 
 a {
   color: #007bff;
