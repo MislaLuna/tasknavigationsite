@@ -1,0 +1,127 @@
+body{
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 70px;
+    background-image: url('../images/building-4803602.jpg');
+}
+
+
+.top-container {
+    margin-bottom: 6px; /* Espaçamento entre as divs */
+
+}
+
+.top-div {
+    width: 400px;
+    padding: 20px;
+    border-radius: 0px;
+    box-shadow: 0 0 40px rgba(38, 39, 40, 0.548);
+    margin: auto;
+    text-align: center;
+
+    color: aliceblue;
+}
+
+
+
+
+
+
+.input-container {
+    display: flex; /* Usar flexbox para alinhar ícone e input */
+    align-items: center; /* Centraliza verticalmente */
+    margin-bottom: 15px; /* Espaçamento entre os campos */
+}
+.input-container i {
+    color: #888; /* Cor do ícone */
+    font-size: 20px; /* Tamanho do ícone */
+    margin-right: 10px; /* Espaçamento entre ícone e campo de entrada */
+}
+.input-container input {
+    width: 100%; /* Largura total */
+    height: 40px; /* Altura do campo */
+    border: 1px solid #ccc; /* Borda do campo */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding-left: 10px; /* Espaçamento interno à esquerda */
+}
+
+.login-container {
+    width: 400px;
+    padding: 60px;
+    border-radius: 0px;
+    box-shadow: 0 0 40px rgba(38, 39, 40, 0.548);
+    margin: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.863);
+}
+
+.n-login {
+    width: 400px;
+    padding: 60px;
+    border-radius: 25px;
+    box-shadow: 0 0 40px rgba(38, 39, 40, 0.548);
+    margin: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.863);
+}
+
+
+
+
+
+.form-group {
+    margin-bottom: 15px;
+ 
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background-color: rgba(13, 13, 13, 0.519);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none; /* Remove a borda padrão */
+    border: 1px solid #002fff; /* Borda personalizada */
+}
+button {
+    width: 90%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: auto; /* Adicione esta linha */
+    display: block; /* Adicione esta linha */
+}
+
+button:hover {
+    background-color: #007ab3;
+}
+
+.links {
+    margin-top: 10px;
+    color: rgb(81, 165, 230);;
+
+}
+a:hover{
+   color: rgb(230, 131, 81);
+
+}
+a {
+    color: rgb(81, 165, 230);
+ 
+ }

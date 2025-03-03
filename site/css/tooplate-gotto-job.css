@@ -723,10 +723,13 @@ nav[aria-label="breadcrumb"] {
 .about-page .about-section {
   padding-top: 100px;
   padding-bottom: 0;
+
 }
 
 .about-section .custom-text-block {
   background: var(--secondary-color);
+  border-radius: 25px;
+  position:relative ;
 }
 
 .about-image-wrap,
@@ -745,6 +748,7 @@ nav[aria-label="breadcrumb"] {
   right: 0;
   margin: 20px;
   padding: 20px;
+  
 }
 
 .about-info-text h4 {
@@ -1162,13 +1166,13 @@ nav[aria-label="breadcrumb"] {
   CTA               
 -----------------------------------------*/
 .cta-section {
-  background-image: url('../images/millennial-group-young-businesspeople.jpg');
+  background-image: url('../images/water-4230682_1920.jpg');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: cover;
+  background-size: cover  ;
   position: relative;
   padding-top: 150px;
-  padding-bottom: 75px;
+  padding-bottom: 70px;
 }
 
 
