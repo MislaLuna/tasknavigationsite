@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Criar Conta</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="icon" href="images/tpuro.png" type="image/x-icon">
+    <link rel="icon" href="images/icons8-t-96.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,34 +17,33 @@
     <link href="css/owl.carousel.min.css" rel="stylesheet">
     <link href="css/owl.theme.default.min.css" rel="stylesheet">
     <link href="css/tooplate-gotto-job.css" rel="stylesheet">
-    <link href="css/login.css" rel="stylesheet">
+    <link href="css/contanova.css" rel="stylesheet">
 </head>
 <body>
 
     <div class="overlay"></div>
-    <!-- Logo no lado esquerdo -->
 
     <a href="pagina1.html" class="logo-link">
         <br><img src="images/T.jpg" alt="Logo" class="logo-image">
     </a>
-
     <section class="about-section">
         <div class="container">
+            
             <div class="row">
                 <div class="top-container">
                     <div class="top-div">
                         <br>
-                        <h1 style="color:#3d0e54d8" class="login-title">LOGIN</h1>
+                        <h1 style="color:#3d0e54d8" class="login-title">CRIAR CONTA</h1>
                     </div>
                 </div>
 
                 <div class="login-container">
-                    <form>
+                    <form id="signup-form">
                         <div class="input-group">
-                            <label for="username">Usuário | Email</label>
+                            <label for="email">Email</label>
                             <div class="input-icon">
-                                <i class="material-icons">person</i>
-                                <input type="text" id="username" placeholder="Digite seu usuário">
+                                <i class="material-icons">email</i>
+                                <input type="email" id="email" placeholder="Digite seu email" required>
                             </div>
                         </div>
                         
@@ -52,24 +51,32 @@
                             <label for="password">Senha</label>
                             <div class="input-icon">
                                 <i class="material-icons">lock</i>
-                                <input type="password" id="password" placeholder="Digite sua senha">
+                                <input type="password" id="password" placeholder="Digite sua senha" required>
                             </div>
                         </div>
+
+                        <div class="input-group">
+                            <label for="confirm-password">Confirmar Senha</label>
+                            <div class="input-icon">
+                                <i class="material-icons">lock</i>
+                                <input type="password" id="confirm-password" placeholder="Confirme sua senha" required>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit">Criar Conta</button>
+                        </div>
                         
+                        <br>
                         <div class="social-login">
+                            <!-- Botão de login com Google -->
                             <a href="#" class="google-login">
-                                <i class="fab fa-google"></i> Login com Google
+                                <i class="fab fa-google"></i> Criar Conta com Google
                             </a>
                         </div>
 
-                        <br><br>
-                        <div class="form-actions">
-                            <button type="submit">Entrar</button>
-                        </div>
                         <div class="links">
-                            <a href="pagina3.html">Esqueceu a senha?</a>
-                            <span> | </span>
-                            <a href="pagina4.html">Criar conta</a>
+                            <a href="pagina2.html">Já tem uma conta? Faça login</a>
                         </div>
                     </form>
                 </div>
@@ -77,46 +84,6 @@
         </div>
     </section>
 
-
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const form = document.querySelector("form");
-    
-            form.addEventListener("submit", function (event) {
-                event.preventDefault(); // Impede o envio do formulário se houver erro
-    
-                let username = document.getElementById("username").value.trim();
-                let password = document.getElementById("password").value.trim();
-                let errorMessage = "";
-    
-                // Lista fictícia de e-mails registrados (simulação)
-                const registeredEmails = ["teste@email.com", "usuario@empresa.com", "admin@site.com"];
-    
-                // Validação do e-mail (deve conter '@' e terminar com '.com')
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/;
-                if (!emailRegex.test(username)) {
-                    errorMessage += "Digite um e-mail válido (ex: usuario@email.com).\n";
-                } else if (!registeredEmails.includes(username)) {
-                    errorMessage += "Este e-mail não está registrado.\n";
-                }
-    
-                // Verifica se a senha está preenchida
-                if (password === "") {
-                    errorMessage += "Preencha o campo Senha.\n";
-                }
-    
-                if (errorMessage) {
-                    alert(errorMessage); // Exibe a mensagem de erro
-                } else {
-                    alert("Login bem-sucedido!"); // Mensagem de sucesso (substituir pelo envio real)
-                    form.submit(); // Envia o formulário se estiver correto
-                }
-            });
-        });
-    </script>
-    
-    
     <!-- Inclua o script da API do Google -->
     <script src="https://accounts.google.com/gsi/client" async defer></script>
 
@@ -129,12 +96,14 @@
 
             google.accounts.id.renderButton(
                 document.querySelector(".google-login"),
-                { theme: "outline", size: "large" }
+                { theme: "outline", size: "large" }  // Personalização do botão
             );
         };
 
         function handleCredentialResponse(response) {
+            // Aqui você pode tratar a resposta do Google (usuário autenticado)
             console.log("Google Login Response:", response);
+            // Aqui você pode enviar os dados do usuário para o seu servidor, por exemplo.
         }
     </script>
 </body>

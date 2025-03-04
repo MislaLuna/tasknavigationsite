@@ -11,10 +11,10 @@ https://www.tooplate.com/view/2134-gotto-job
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #0e2254;
-  --secondary-color:              #0dcaf0;
+  --primary-color:                #3d0e54;
+  --secondary-color:              #bc9aff;
   --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #2270e4;
+  --custom-btn-bg-color:          #8c52ff;
   --social-icon-link-bg-color:    #0e2254;
   --dark-color:                   #000000;
   --p-color:                      #717275;
@@ -447,7 +447,7 @@ nav[aria-label="breadcrumb"] {
 
 .logo-image {
   display: block;
-  width: 65px;
+  width: 200px;
   margin-right: 15px;
 }
 
@@ -1166,7 +1166,7 @@ nav[aria-label="breadcrumb"] {
   CTA               
 -----------------------------------------*/
 .cta-section {
-  background-image: url('../images/water-4230682_1920.jpg');
+  background-image: url('../images/yosemite-922757.jpg');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover  ;

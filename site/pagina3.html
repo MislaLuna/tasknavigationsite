@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueceu a senha?</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="images/icons8-t-96.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="css/tooplate-gotto-job.css" rel="stylesheet">
+    <link href="css/esqueceusenha.css" rel="stylesheet"> 
+</head>
+<body>
+
+    
+    <section class="about-section">
+        <div class="container">
+            <div class="row">
+
+                
+                
+
+                <div class="login-container">
+                    
+                    <form>
+                    
+                        <div class="icone-cadeado">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <p>Enviaremos um e-mail para confirmar sua identidade. Depois, é só seguir as instruções para redefinir sua senha!</p>
+                        <div class="input-group">
+                            <label for="username">Email</label>
+                            <div class="input-icon">
+                                <i class="fas fa-envelope"></i> 
+                                <input type="text" id="username" placeholder="Digite seu e-mail">
+                            </div>
+                        </div>
+                        
+                        
+                     
+
+                        <br><br>
+                        <div class="form-actions">
+                            <button type="submit">Receber orientações</button>
+                        </div>
+                        <br>
+                        <div class="form-actions-2">
+                            <button type="button" class="btn-voltar" onclick="voltarPagina()">Voltar ao login</button>
+                        </div>
+                      
+
+                   
+                    </form>
+
+<!-- Área para mensagens -->
+<div id="mensagem-container" style="margin-top: 20px; font-size: 16px; color: green; display: none;">
+    <!-- Mensagens de sucesso ou erro serão exibidas aqui -->
+</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+
+
+   
+    <script>
+        // Função para voltar para a página de login
+        function voltarPagina() {
+            window.location.href = "file:///C:/Users/milee/OneDrive/Documentos/repositorios/tasknavigationsite/site/pagina2.html"; // Substitua pelo endereço da página desejada
+        }
+
+        // Função para validar o formato do e-mail
+        function validarEmail(email) {
+            const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            return regex.test(email);
+        }
+
+        // Evento ao submeter o formulário
+        document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Impede o envio do formulário
+
+            let emailInput = document.getElementById("username");
+            let mensagemContainer = document.getElementById("mensagem-container");
+
+            // Limpa mensagens anteriores
+            mensagemContainer.style.display = 'none';
+            mensagemContainer.innerHTML = '';
+
+            if (emailInput.value.trim() === "") {
+                mensagemContainer.style.color = 'red'; // Mensagem de erro
+                mensagemContainer.innerHTML = "Por favor, preencha o campo de e-mail.";
+                mensagemContainer.style.display = 'block';
+                emailInput.focus(); // Foca no campo para o usuário corrigir
+            } else if (!validarEmail(emailInput.value.trim())) {
+                mensagemContainer.style.color = 'red'; // Mensagem de erro
+                mensagemContainer.innerHTML = "Por favor, insira um e-mail válido.";
+                mensagemContainer.style.display = 'block';
+            } else {
+                mensagemContainer.style.color = 'green'; // Mensagem de sucesso
+                mensagemContainer.innerHTML = "Orientações enviadas para o seu e-mail.";
+                mensagemContainer.style.display = 'block';
+                // Aqui você pode adicionar a lógica para envio do e-mail
+            }
+        });
+    </script>
+    
+    
+
+
+</body>
+</html>
