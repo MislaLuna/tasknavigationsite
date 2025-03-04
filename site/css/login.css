@@ -1,101 +1,125 @@
-body{
+/* Corpo da página */
+body {
+    background-image: url('../images/texting-2840246.jpg');
     background-repeat: no-repeat;
-    background-position: top;
     background-size: cover;
     position: relative;
     padding-top: 150px;
-    padding-bottom: 70px;
-    background-image: url('../images/building-4803602.jpg');
+    padding-bottom: 7px;
+    margin-left: 50px;
+    animation: backgroundSlideIn 2s ease-out forwards; /* Adicionando animação para o fundo */
 }
+
+
 
 
 .top-container {
-    margin-bottom: 6px; /* Espaçamento entre as divs */
-
+    margin-bottom: 6px;
 }
 
 .top-div {
-    width: 400px;
-    padding: 20px;
-    border-radius: 0px;
+    width: 500px;
+    padding: 14px;
     box-shadow: 0 0 40px rgba(38, 39, 40, 0.548);
     margin: auto;
     text-align: center;
-
-    color: aliceblue;
+    color: rgb(197, 197, 197);
+    margin-left: auto; /* Mover para a direita */
+    margin-right: 40px; /* Ajuste para não ficar colado na borda */
 }
 
-
-
-
-
-
-.input-container {
-    display: flex; /* Usar flexbox para alinhar ícone e input */
-    align-items: center; /* Centraliza verticalmente */
-    margin-bottom: 15px; /* Espaçamento entre os campos */
-}
-.input-container i {
-    color: #888; /* Cor do ícone */
-    font-size: 20px; /* Tamanho do ícone */
-    margin-right: 10px; /* Espaçamento entre ícone e campo de entrada */
-}
-.input-container input {
-    width: 100%; /* Largura total */
-    height: 40px; /* Altura do campo */
-    border: 1px solid #ccc; /* Borda do campo */
-    border-radius: 5px; /* Bordas arredondadas */
-    padding-left: 10px; /* Espaçamento interno à esquerda */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
 
-.login-container {
-    width: 400px;
-    padding: 60px;
-    border-radius: 0px;
-    box-shadow: 0 0 40px rgba(38, 39, 40, 0.548);
-    margin: auto;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.863);
+.input-group label {
+    text-align: left;
+    width: 100%;
 }
 
-.n-login {
-    width: 400px;
-    padding: 60px;
-    border-radius: 25px;
-    box-shadow: 0 0 40px rgba(38, 39, 40, 0.548);
-    margin: auto;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.863);
+.input-icon {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+    width: 100%;
 }
 
-
-
-
-
-.form-group {
-    margin-bottom: 15px;
- 
+.input-icon i {
+    color: #888;
+    font-size: 20px;
+    margin-right: 10px;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="password"] {
+.input-icon input {
+    border: none;
+    outline: none;
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    background-color: rgba(13, 13, 13, 0.519);
+    font-size: 16px;
+    text-align: left;
 }
 
-input[type="text"]:focus,
-input[type="password"]:focus {
-    outline: none; /* Remove a borda padrão */
-    border: 1px solid #002fff; /* Borda personalizada */
+/* Estilo da caixa de login */
+.login-container {
+    width: 500px; /* Mantém o tamanho fixo */
+    padding: 90px;
+    box-shadow: 0 0 40px rgba(38, 39, 40, 0.548);
+    background-color: rgba(248, 248, 248, 0.934);
+    text-align: center;
+    margin-left: auto; /* Empurra para a direita */
+    margin-right: 50px; /* Ajuste opcional para não colar na borda */
 }
+/* Estilos dos botões sociais */
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.social-btn i {
+    margin-right: 10px;
+}
+
+/* Facebook */
+.facebook-btn {
+    background-color: #1877F2;
+}
+
+.facebook-btn:hover {
+    background-color: #1559C1;
+}
+
+/* Google */
+.google-btn {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+.google-btn i {
+    color: #DB4437;
+}
+
+/* Estilo do botão de login */
 button {
     width: 90%;
     padding: 10px;
@@ -104,24 +128,114 @@ button {
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    margin-left: auto; /* Adicione esta linha */
-    display: block; /* Adicione esta linha */
+    display: block;
 }
+
+
+
+
+
+
+
+
+
+
+/* Animação para o background deslizar da direita para a esquerda */
+@keyframes backgroundSlideIn {
+    100% {
+        background-position: 10% center; /* Começa do lado direito */
+    }
+    100% {
+        background-position: center center; /* Move para o centro */
+    }
+}
+
+/* Estilos para o título de login */
+.login-title {
+    color: #4e96c38c;
+    font-size: 3rem;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation: slideInRight 2s ease-out; /* Animação do título */
+}
+
+/* Animação para o título deslizar da direita para a esquerda */
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%); /* Começa fora da tela à direita */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0); /* Chega ao seu lugar original */
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Definir estilo do título */
+.login-title {
+    color: #4e96c38c;
+    font-size: 3rem;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation: slideInRight 1.5s ease-out;
+}
+
+/* Animação para o texto deslizar da direita para a esquerda */
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%); /* Começa fora da tela à direita */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0); /* Chega ao seu lugar original */
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
 
 button:hover {
     background-color: #007ab3;
 }
 
+/* Links */
 .links {
     margin-top: 10px;
-    color: rgb(81, 165, 230);;
-
+    color: rgb(81, 165, 230);
 }
-a:hover{
-   color: rgb(230, 131, 81);
 
-}
 a {
     color: rgb(81, 165, 230);
- 
- }
+}
+
+a:hover {
+    color: rgb(230, 131, 81);
+}
+
+/* Efeito de hover no botão */
+.nav-link.custom-btn:hover {
+    background-color: #007bff; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto */
+    transform: scale(1.05); /* Aumenta ligeiramente o botão */
+    transition: all 0.3s ease; /* Transição suave */
+}
