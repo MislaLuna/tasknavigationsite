@@ -58,7 +58,7 @@
                         
                         <div class="social-login">
                             <a href="#" class="google-login">
-                                <i class="fab fa-google"></i> Login com Google
+                                <i class="fab fa-google"></i> L ogin com Google
                             </a>
                         </div>
 
@@ -82,17 +82,17 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const form = document.querySelector("form");
-    
+        
             form.addEventListener("submit", function (event) {
                 event.preventDefault(); // Impede o envio do formulário se houver erro
-    
+        
                 let username = document.getElementById("username").value.trim();
                 let password = document.getElementById("password").value.trim();
                 let errorMessage = "";
-    
+        
                 // Lista fictícia de e-mails registrados (simulação)
                 const registeredEmails = ["teste@email.com", "usuario@empresa.com", "admin@site.com"];
-    
+        
                 // Validação do e-mail (deve conter '@' e terminar com '.com')
                 const emailRegex = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/;
                 if (!emailRegex.test(username)) {
@@ -100,17 +100,18 @@
                 } else if (!registeredEmails.includes(username)) {
                     errorMessage += "Este e-mail não está registrado.\n";
                 }
-    
+        
                 // Verifica se a senha está preenchida
                 if (password === "") {
                     errorMessage += "Preencha o campo Senha.\n";
                 }
-    
+        
                 if (errorMessage) {
                     alert(errorMessage); // Exibe a mensagem de erro
                 } else {
                     alert("Login bem-sucedido!"); // Mensagem de sucesso (substituir pelo envio real)
-                    form.submit(); // Envia o formulário se estiver correto
+                    // Redireciona para a página desejada após validação bem-sucedida
+                    window.location.href = "pagina5.html"; 
                 }
             });
         });
