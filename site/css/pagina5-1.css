@@ -25,7 +25,7 @@
   
   body {
     font-family: var(--body-font-family);
-    background-color: var(--white-color);
+background-color: rgb(196, 185, 171);
     margin: 0;
     padding: 0;
     display: flex;
@@ -156,7 +156,7 @@
   
   /* Seção principal */
   .hero {
-    background-color: var(--white-color);
+    background-color: rgb(196, 185, 171);
     padding: 4rem 2rem;
     text-align: center;
   }
