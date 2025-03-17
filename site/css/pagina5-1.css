@@ -25,7 +25,7 @@
   
   body {
     font-family: var(--body-font-family);
-background-color: rgb(196, 185, 171);
+    background-color: rgb(231, 226, 219); 
     margin: 0;
     padding: 0;
     display: flex;
@@ -34,7 +34,8 @@ background-color: rgb(196, 185, 171);
   }
   
   main {
-    flex: 1;
+    flex: 2;
+    display: flex;
     
   }
   
@@ -96,6 +97,7 @@ background-color: rgb(196, 185, 171);
   }
   
 
+
   .container {
     padding: 0rem;
   }
@@ -106,21 +108,21 @@ background-color: rgb(196, 185, 171);
     float: left;
     height: 742px;
     width: 20%;
+    border-radius: 25px;
   }
   
 
 
-
-
   .linha {
-    height: 1px;  /* Altura da linha */
-    background-color: #ccc;  /* Cor da linha */
-    width: 100%;  /* Largura da linha */
-    max-width: 1000px;
-    margin: 20px auto;  /* Margens para ajustar a posição da linha */
+    height: 1px;  
+    background-color: #cccccc88;  
+    width: calc(100% - -35px);  /* Largura ajustada para considerar a margem esquerda */
+    margin: 0;  
+    margin-left: calc(100% - 400px); 
+    padding: 0;  
 }
 
-  
+
 
 
   nav ul {
@@ -130,7 +132,7 @@ background-color: rgb(196, 185, 171);
     margin: 0;
     padding: 0;
     float: left;
-    margin-top: 50px; /* Espaço acima */
+    margin-top: 25px; /* Espaço acima */
     margin-bottom: 20px; /* Espaço abaixo */
 
   }
@@ -155,10 +157,26 @@ background-color: rgb(196, 185, 171);
   }
   
   /* Seção principal */
+
+
+  .dashboard{
+
+    background-color: #bebebe;
+    border-radius: 25px;
+    width: 76%;
+    height: 710px;
+    position: relative;
+    margin-left: 457px;
+
+
+  }
+
+
   .hero {
-    background-color: rgb(196, 185, 171);
-    padding: 4rem 2rem;
+    background-color: rgb(231, 226, 219);
+    padding: 30rem 2rem;
     text-align: center;
+    margin-bottom: 10rem;
   }
   
   .hero h1 {
@@ -197,10 +215,12 @@ background-color: rgb(196, 185, 171);
     background-color: var(--white-color);
     padding: 2rem;
     text-align: center;
-    margin: 0 1rem;
+    margin:  1rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     border-radius: var(--border-radius-medium);
     margin-bottom: 50px; /* Espaço abaixo */
+    margin-top: 200px;
+
   }
   
   .feature i {
@@ -226,7 +246,7 @@ background-color: rgb(196, 185, 171);
     padding: 1rem;
     margin-top: auto;
     font-size: var(--copyright-font-size);
-    
+    border-radius: 25px;
   }
   
   
