@@ -1,0 +1,27 @@
+    
+
+    <main>
+        <section class="hero">
+            <h1>Bem-vindo ao TN-ADM</h1>
+            <p>Gerencie suas tarefas e equipe de forma eficiente.</p>
+            <a href="#" class="btn">Começar agora</a>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <i class="fas fa-tasks"></i>
+                <h3>Gerenciamento de Tarefas</h3>
+                <p>Atribua, acompanhe e conclua tarefas com facilidade.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-users"></i>
+                <h3>Gerenciamento de Usuários</h3>
+                <p>Adicione, edite e monitore seus funcionários.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-chart-line"></i>
+                <h3>Relatórios Avançados</h3>
+                <p>Gere relatórios detalhados sobre o desempenho da equipe.</p>
+            </div>
+        </section>
+    </main>

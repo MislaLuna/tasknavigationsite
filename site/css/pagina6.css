@@ -207,7 +207,7 @@
     background-color: #8c52ff;
     color: var(--white-color);
     text-decoration: none;
-    padding: rem 2rem;
+    padding: 1rem 2rem;
     border-radius: var(--border-radius-large);
     font-size: var(--btn-font-size);
     font-weight: var(--font-weight-semibold);
@@ -223,7 +223,7 @@
     justify-content: center;
     align-items: center;
     height: 50vh; /* Altura da viewport */
-    padding: 0px;
+    padding: 100px;
   }
   
   .feature {
@@ -241,8 +241,6 @@
     min-width: 200px;
     max-width: 300px;
     box-sizing: border-box;
-    margin-left: 10px;
-    top: 900px;
 }
   
   .feature i {
@@ -255,7 +253,7 @@
     font-size: var(--h3-font-size);
     margin-bottom: 1rem;
   }
-
+  
   .feature p {
     font-size: var(--p-font-size);
   }
