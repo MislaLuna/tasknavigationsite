@@ -191,7 +191,8 @@
     text-align: center;
     margin: 2rem auto; /* Margem superior e inferior de 2rem, e centraliza horizontalmente */
     max-width: 890px; /* Define uma largura máxima para a div */
-    
+    box-shadow: 20px;
+    box-shadow: 1px 1px 20px ;
 }
   
   .hero h1 {
@@ -226,6 +227,7 @@
     align-items: center;
     height: 50vh; /* Altura da viewport */
     padding: 0px;
+    
   }
   
   .feature {
@@ -245,6 +247,7 @@
     box-sizing: border-box;
     margin-left: 10px;
     top: 900px;
+    box-shadow: 10px 10px 50px ;
 }
   
   .feature i {
@@ -331,6 +334,7 @@
   align-items: center;
   text-align: center;
   height: 660px;
+  box-shadow: 10px 10px 50px ;
 }
 
 .table-wrapper {
