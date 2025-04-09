@@ -162,7 +162,7 @@
 
   .dashboard{
 
-    background-color: #bebebe;
+    background-color: #d4d4d4;
     border-radius: 25px;
     width: 100%;
     height: 900px;
@@ -173,14 +173,14 @@
   }
   .dash-2{
 
-    background-color: #dadada;
+    background-color: #b9b9b9;
     border-radius: 25px;
     width: 91%;
     height: 775px;
     position: sticky;
     margin-left: 150px;
     margin: 65px;
-
+    box-shadow: 1px 1px 5px 1px #6d6d6d;
   }
 
 
@@ -192,7 +192,7 @@
     margin: 2rem auto; /* Margem superior e inferior de 2rem, e centraliza horizontalmente */
     max-width: 890px; /* Define uma largura máxima para a div */
     box-shadow: 20px;
-    box-shadow: 1px 1px 20px ;
+
 }
   
   .hero h1 {
@@ -247,7 +247,7 @@
     box-sizing: border-box;
     margin-left: 10px;
     top: 900px;
-    box-shadow: 10px 10px 50px ;
+    box-shadow: 1px 1px 5px 1px #939394;
 }
   
   .feature i {
@@ -334,9 +334,9 @@
   align-items: center;
   text-align: center;
   height: 660px;
-  box-shadow: 10px 10px 50px ;
-}
+  box-shadow: 1px 1px 5px 1px #939394;
 
+}
 .table-wrapper {
   width: 100%;
   max-height: 360px; /* Altura fixa da div da tabela */
@@ -386,3 +386,26 @@ td select {
 .edit-btn:hover, .delete-btn:hover {
   opacity: 0.7;
 }
+
+
+
+
+
+
+
+
+.filter-users {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.filter-users input,
+.filter-users select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+

@@ -1,15 +1,13 @@
-import { motion } from 'framer-motion';
+import React from "react";
+import UserTable from "./components/UserTable";
+import "./styles/styles.css"; // opcional
 
-const App = () => {
+function App() {
   return (
-    <motion.div 
-      initial={{ opacity: 0 }} 
-      animate={{ opacity: 1 }} 
-      transition={{ duration: 1 }}
-    >
-      <h1>Olá, Mundo!</h1>
-    </motion.div>
+    <div className="App">
+      <UserTable />
+    </div>
   );
-};
+}
 
 export default App;
