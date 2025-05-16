@@ -9,44 +9,46 @@ https://www.tooplate.com/view/2134-gotto-job
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
-:root {
-  --white-color:                  #ffffff;
-  --primary-color:                #3d0e54;
-  --secondary-color:              #bc9aff;
-  --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #8c52ff;
-  --social-icon-link-bg-color:    #0e2254;
-  --dark-color:                   #000000;
-  --p-color:                      #717275;
-  --border-color:                 #e9eaeb;
+  :root {
+    --white-color:                  #ffffff;
+    --primary-color:                #3d0e54;
+    --secondary-color:              #bc9aff;
+    --section-bg-color:             #f0f8ff;
+    --custom-btn-bg-color:          #8c52ff;
+    --social-icon-link-bg-color:    #0e2254;
+    --dark-color:                   #000000;
+    --p-color:                      #717275;
+    --border-color:                 #e9eaeb;
 
-  --body-font-family:             'League Spartan', sans-serif;
+    --body-font-family: 'League Spartan', sans-serif;
 
-  --h1-font-size:                 62px;
-  --h2-font-size:                 48px;
-  --h3-font-size:                 36px;
-  --h4-font-size:                 32px;
-  --h5-font-size:                 24px;
-  --h6-font-size:                 22px;
-  --p-font-size:                  20px;
-  --btn-font-size:                16px;
-  --copyright-font-size:          14px;
+    
 
-  --border-radius-large:          100px;
-  --border-radius-medium:         30px;
-  --border-radius-small:          10px;
+    --h1-font-size:                 62px;
+    --h2-font-size:                 48px;
+    --h3-font-size:                 36px;
+    --h4-font-size:                 32px;
+    --h5-font-size:                 24px;
+    --h6-font-size:                 22px;
+    --p-font-size:                  20px;
+    --btn-font-size:                16px;
+    --copyright-font-size:          14px;
 
-  --font-weight-thin:             100;
-  --font-weight-light:            300;
-  --font-weight-normal:           400;
-  --font-weight-semibold:         600;
-  --font-weight-bold:             700;
-}
+    --border-radius-large:          100px;
+    --border-radius-medium:         30px;
+    --border-radius-small:          10px;
 
-body {
-  background-color: var(--white-color);
-  font-family: var(--body-font-family); 
-}
+    --font-weight-thin:             100;
+    --font-weight-light:            300;
+    --font-weight-normal:           400;
+    --font-weight-semibold:         600;
+    --font-weight-bold:             700;
+  }
+
+  body {
+    background-color: var(--white-color);
+    font-family: var(--body-font-family); 
+  }
 
 
 /*---------------------------------------
@@ -188,6 +190,7 @@ strong {
 .instagram-block {
   position: relative;
   height: 100%;
+  width: 100%;
 }
 
 .instagram-block-text {
@@ -723,6 +726,7 @@ nav[aria-label="breadcrumb"] {
 .about-page .about-section {
   padding-top: 100px;
   padding-bottom: 0;
+
 
 }
 
